@@ -1,21 +1,25 @@
 artista = {
-    "Nome": '',
+    "id": int
+    "Nome": str,
     "Ano_inicio": int,
     "Gravadora": 'fk_gravadora',
     "Albums": []
 }
 
 album = {
-    "Artista": '',
+    "id": int,
+    "Nome": str
+    "Artista": str,
     "Ano": int,
-    "Genero": '',
+    "Genero": str,
     "Duracao": float,
     "Musicas": []
 }
 
 gravadora = {
-    "Nome": '',
-    "Pais":'',
+    "id": int,
+    "Nome": str,
+    "Pais": str,
     "Contato": '',
     "Artistas": []
 }

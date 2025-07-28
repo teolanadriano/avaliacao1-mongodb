@@ -6,21 +6,13 @@ uri = "mongodb+srv://Teolan:td2312@cluster0.ex49ok1.mongodb.net/?retryWrites=tru
 
 client = MongoClient(uri, server_api=ServerApi('1'))
 
+db = client['Avaliacao']
+
+artistas = db["Artistas"]
+albuns = db["Albuns"]
+gravadora = db["Gravadoras"]
+
 bancoDeDados = client['sample_mflix']
 collection_filmes = bancoDeDados['movies']
 
-query = {"title": "Regeneration"}
-
-try:
-    filme = collection_filmes.find_one(query)
-    if filme:
-        print("Filme encontrado!", filme['title'])
-        pprint(filme)
-    else:
-        print("Nenhum filme encontrado!")
-
-except Exception as e:
-    print(f"Erro: {e}")
-
-finally:
-    client.close()
+client.close()
