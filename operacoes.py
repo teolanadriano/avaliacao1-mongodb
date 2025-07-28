@@ -8,7 +8,7 @@ gravadoras = dbname['gravadora']
 artista1 = {
     "Nome": "Dua Lipa",
     "Ano_inicio": 2015,
-    "Gravadora": "Warner Bros",
+    "Gravadora": "Warner Music Group",
     "Albuns": ["Dua Lipa", "Future Nostalgia", "Radical Optimism"]
 }
 
